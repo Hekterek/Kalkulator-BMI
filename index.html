@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+    
+</head>
+<body>
+    <section>
+         <form oninput="m_value.value = parseInt(height.value) / 100; result.value = parseInt(weight.value) / Math.pow(m_value.value,2); f_result.value = Math.round(result.value * 100) / 100 ;info_weight.value = weight.value; info_height.value = height.value "> 
+            <h1>Kalkulator BMI</h1>
+            <label class="label_weight" for="weight">Waga</label> 
+            <input type="range" id="weight" name="weight" min="00" max="150"> 
+             
+            <div class="circle_weight"> 
+                <output id="info_weight">00</output>  
+            </div>
+
+            <label class="label_height" for="height">Wzrost</label> 
+            <input type="range" id="height" name="height" min="50" max="250"> 
+            <div class="circle_height"><output id="info_height">00</output> </div>
+
+            <output id="m_value">00</output>      
+            <output id="result">00</output>      
+
+            <div class="result_circle">
+                <output id="f_result">00</output>
+            </div>
+
+            <button class="reset" type="reset">Reset</button>
+            
+        </form>
+    </section>
+    
+    <img class="wykres_bmi" src="assets/img/legenda_bmi.jpg" alt="wykres wynikow bmi">
+</body>
+</html>
+
+
+
+
+
