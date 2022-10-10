@@ -17,15 +17,18 @@
                         info_height.value = height.value"> 
             <h1>Kalkulator BMI</h1>
             <label class="label_weight" for="weight">Waga</label> 
-            <input type="range" id="weight" name="weight" min="00" max="150"> 
-             
+            <input type="range" id="weight" name="weight" min="00" max="150">
             <div class="circle_weight"> 
                 <output id="info_weight">00</output>  
             </div>
+            <p class="label_kg">kg</p>
 
             <label class="label_height" for="height">Wzrost</label> 
             <input type="range" id="height" name="height" min="50" max="250"> 
-            <div class="circle_height"><output id="info_height">00</output> </div>
+            <div class="circle_height">
+                <output id="info_height">00</output> 
+            </div>
+            <p class="label_cm">cm</p>
 
             <div class="result_circle">
                 <output id="f_result">00</output>

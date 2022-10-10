@@ -77,6 +77,12 @@ h1{
     top: 45px;
 }
 
+.label_kg{
+    position: absolute;
+    left: 132px;
+    top: 85px;
+}
+
 #height{
     transform: rotate(90deg);
     box-shadow: 0px 0px 24px 0 rgba(0,0,0,0.2);
@@ -106,6 +112,12 @@ h1{
     position: absolute;
     left: 205px;
     top: 45px;
+}
+
+.label_cm{
+    position: absolute;
+    left: 262px;
+    top: 85px;
 }
 
 .result_circle{
