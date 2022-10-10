@@ -10,7 +10,11 @@
 </head>
 <body>
     <section>
-         <form oninput="m_value.value = parseInt(height.value) / 100; result.value = parseInt(weight.value) / Math.pow(m_value.value,2); f_result.value = Math.round(result.value * 100) / 100 ;info_weight.value = weight.value; info_height.value = height.value "> 
+         <form oninput="f_result.value = parseInt(height.value) / 100; 
+                        f_result.value = parseInt(weight.value) / Math.pow(f_result.value, 2); 
+                        f_result.value = Math.round(f_result.value * 100) / 100 ;
+                        info_weight.value = weight.value; 
+                        info_height.value = height.value"> 
             <h1>Kalkulator BMI</h1>
             <label class="label_weight" for="weight">Waga</label> 
             <input type="range" id="weight" name="weight" min="00" max="150"> 
@@ -23,13 +27,10 @@
             <input type="range" id="height" name="height" min="50" max="250"> 
             <div class="circle_height"><output id="info_height">00</output> </div>
 
-            <output id="m_value">00</output>      
-            <output id="result">00</output>      
-
             <div class="result_circle">
                 <output id="f_result">00</output>
             </div>
-
+            
             <button class="reset" type="reset">Reset</button>
             
         </form>
